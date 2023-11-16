@@ -5,6 +5,3 @@ steps:
   args: ['python', 'app.py']
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['run', 'deploy', 'stockquote', '--image', 'us-central1-docker.pkg.dev/$PROJECT_ID/testrepo/stockquote']
-options:
-  logging: CLOUD_LOGGING
-  dynamicSubstitutions: true
