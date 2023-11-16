@@ -6,7 +6,6 @@ You are backend developer to write API services. Please write Open API 3.0  spec
 
 Save the results to api-spec.yaml
 
-
 ## implement API service
 Based on the OpenAPI spec, implement the API service with python FastAPI libray
 
