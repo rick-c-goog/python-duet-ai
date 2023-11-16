@@ -1,0 +1,10 @@
+steps:
+- name: 'python:3.10-slim'
+  args: ['pip', 'install', '-r', 'requirements.txt']
+- name: 'python:3.10-slim'
+  args: ['python', 'app.py']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['run', 'deploy', 'stockquote', '--image', 'us-central1-docker.pkg.dev/$PROJECT_ID/testrepo/stockquote']
+options:
+  logging: CLOUD_LOGGING
+  dynamicSubstitutions: true
