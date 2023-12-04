@@ -6,6 +6,11 @@ You are backend developer to write API services. Please write Open API 3.0  spec
 
 Save the results to api-spec.yaml
 
+Validate the api specs from the following:
+
+https://editor-next.swagger.io/
+
+
 ## implement API service
 Based on the OpenAPI spec, implement the API service with python FastAPI libray
 
@@ -13,7 +18,7 @@ replace the logic to get stock properties from the database, insted using the ya
 
 Save the results to app.py
 
-13. Build and deploy
+## Build and deploy
 
 list all the required modules need to install for this python implmentation
 
@@ -29,3 +34,5 @@ write a cloud build file, step 1, build the stockquote service, step 2, deploy t
 Save results to cloudbuild.yaml
 
 provide the gcloud command to submit the cloud build job
+
+## Other prompts
